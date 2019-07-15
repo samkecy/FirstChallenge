@@ -64,7 +64,7 @@ public class about extends AppCompatActivity {
         webview.setScrollbarFadingEnabled(false);
         webview.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
         progressBar = ProgressDialog.show(about.this, "Please Wait ", "While Content is Loading...");
-        webview.loadUrl("https://andela.com/about");
+        webview.loadUrl("https://andela.com/alc/");
 
         webview.setWebViewClient(new WebViewClient() {
 
