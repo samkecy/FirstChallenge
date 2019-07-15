@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">First Challenge</string>
+    <string name="info">Welcome to ALC 4.0</string>
+    <string name="notification_error_ssl_cert_invalid">The site Your\'re about to visit has an expired certificate, press continue if you want to proceed </string>
+    <string name="name">Okafor Samson Kelechi</string>
+    <string name="phone">+2347065913497</string>
+    <string name="country">Nigeria</string>
+    <string name="track">Android</string>
+    <string name="email">samkecy1@gmail.com</string>
+    <string name="slackUser">\@samkecy1</string>
+</resources>

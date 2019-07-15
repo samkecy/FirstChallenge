@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myProfile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/samkecy" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="8dp"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:id="@+id/tvTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:text="Track:"/>
+
+        <TextView
+            android:id="@+id/tvTrackInfo"
+            android:layout_toEndOf="@+id/tvTrack"
+            android:layout_toRightOf="@+id/tvTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track"/>
+
+
+        <TextView
+            android:id="@+id/tvContry"
+            android:layout_below="@+id/tvTrackInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:text="Country:"/>
+
+        <TextView
+            android:id="@+id/tvContryInfo"
+            android:layout_below="@+id/tvTrackInfo"
+            android:layout_toEndOf="@+id/tvContry"
+            android:layout_toRightOf="@+id/tvContry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvContryInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Email:"/>
+
+        <TextView
+            android:id="@+id/tvEmailInfo"
+            android:layout_below="@+id/tvContryInfo"
+            android:layout_toEndOf="@+id/tvEmail"
+            android:layout_toRightOf="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"/>
+
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_below="@+id/tvEmailInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:text="Phone Number:"/>
+
+
+        <TextView
+            android:id="@+id/tvPhoneInfo"
+            android:layout_below="@+id/tvEmailInfo"
+            android:layout_toEndOf="@+id/tvPhone"
+            android:layout_toRightOf="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"/>
+
+
+        <TextView
+            android:id="@+id/tvSlack"
+            android:layout_below="@+id/tvPhoneInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:text="Slack USername:"/>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_below="@+id/tvPhoneInfo"
+            android:layout_toEndOf="@+id/tvSlack"
+            android:layout_toRightOf="@+id/tvSlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slackUser"/>
+    </RelativeLayout>
+
+</LinearLayout>
